@@ -1,4 +1,0 @@
-mypy<1.0
-pytest<6.3
-pytest-asyncio<0.16.0
-pytest-cov<2.13
