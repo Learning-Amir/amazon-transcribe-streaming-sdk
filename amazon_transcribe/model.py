@@ -240,7 +240,7 @@ class StartStreamTranscriptionRequest:
         show_speaker_label=None,
         enable_channel_identification=None,
         number_of_channels=None,
-        enable_partial_results_stabilization=None,
+        enable_partial_results_stabilization=True,
         partial_results_stability=None,
         language_model_name=None,
     ):

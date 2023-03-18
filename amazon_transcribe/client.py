@@ -81,7 +81,7 @@ class TranscribeStreamingClient:
         show_speaker_label: Optional[bool] = None,
         enable_channel_identification: Optional[bool] = None,
         number_of_channels: Optional[int] = None,
-        enable_partial_results_stabilization: Optional[bool] = None,
+        enable_partial_results_stabilization: Optional[bool] = True,
         partial_results_stability: Optional[str] = None,
         language_model_name: Optional[str] = None,
     ) -> StartStreamTranscriptionEventStream:
