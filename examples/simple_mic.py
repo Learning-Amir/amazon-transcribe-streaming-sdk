@@ -26,6 +26,7 @@ class MyEventHandler(TranscriptResultStreamHandler):
         for result in results:
             for alt in result.alternatives:
                 print(alt.transcript)
+                return alt.transcript
 
 
 async def mic_stream():
@@ -79,6 +80,4 @@ async def basic_transcribe():
     await asyncio.gather(write_chunks(stream), handler.handle_events())
 
 
-loop = asyncio.get_event_loop()
-loop.run_until_complete(basic_transcribe())
-loop.close()
+
